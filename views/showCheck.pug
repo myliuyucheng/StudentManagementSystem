@@ -1,0 +1,15 @@
+extends head.pug
+block link
+    //- link(rel="stylesheet", href="/css/showCheck.css")
+block content
+    .content
+        h1 查询学生
+        .checkbox
+            p 学生姓名
+            input(type="text" name="name")
+            br
+            input(type="submit" id="but" value="查询")
+            br
+            a(href="/") 回到首页
+
+    script(src="/js/showCheck.js")

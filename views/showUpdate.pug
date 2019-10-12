@@ -1,0 +1,43 @@
+extends head.pug
+block link
+    link(rel="stylesheet", href="/css/showUpdate.css")
+block content
+    .content
+        h1 更改学生
+        table
+                thead
+                    tr
+                        td 姓名
+                        td 性别
+                        td 语文
+                        td 数学
+                        td 英语
+                tbody#tbody
+                    tr
+                        td 刘钰城
+                        td 男
+                        td 100
+                        td 100
+                        td 100
+        .updatestu 
+            span 学生姓名
+            input(type="text" name="name")
+            br
+            span 学生性别
+            input(type="text" name="sex")
+            br
+            span 语文成绩
+            input(type="text" name="chinese")
+            br
+            span 数学成绩
+            input(type="text" name="mathematics")
+            br
+            span 英语成绩
+            input(type="text" name="english")
+            br
+            input(type="button" value="更改")
+            br
+            a(href="/") 回到首页
+
+            
+    script(src="/js/showUpdate.js")

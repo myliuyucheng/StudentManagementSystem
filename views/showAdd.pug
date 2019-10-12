@@ -1,0 +1,23 @@
+extends head.pug
+block link
+    link(rel="stylesheet", href="/css/showAdd.css")
+block content
+    div.content
+        h1 添加学生
+        form(action="/addStudents" method="get" name="addStu")
+            span 学生姓名
+            input(type="text" name="name")
+            br
+            span 学生性别
+            input(type="text" name="sex")
+            br
+            span 语文成绩
+            input(type="text" name="chinese")
+            br
+            span 数学成绩
+            input(type="text" name="mathematics")
+            br
+            span 英语成绩
+            input(type="text" name="english")
+            br
+            input(type="submit" value="提交")
